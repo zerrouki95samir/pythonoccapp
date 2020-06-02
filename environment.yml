@@ -2,6 +2,6 @@ name: root
 dependencies:
   - python=3.5
   - pip
-  - pip:
-    - -r file:requirements.txt
+  #- pip:
+  #  - -r file:requirements.txt
         
