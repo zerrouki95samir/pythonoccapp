@@ -11,9 +11,9 @@ if not os.path.exists(UPLOAD_DIRECTORY):
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
-    return "Hello, in python-occ-libs"
+    return "<h1>Hello, in python-occ-libs</h1>"
 
 
 @app.route("/files")
