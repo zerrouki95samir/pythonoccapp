@@ -8,7 +8,8 @@ if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
 
 
-api = Flask(__name__)
+app = Flask(__name__)
+
 
 @api.route('/')
 def home():
@@ -47,3 +48,7 @@ def post_file(filename):
     response = make_response(response)
 
     return response
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
