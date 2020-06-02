@@ -1,6 +1,6 @@
 name: root
 channels:
-  - pythonocc
+  - conda-forge
 dependencies:
   - pythonocc-core
   - pip
