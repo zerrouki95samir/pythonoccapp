@@ -1,11 +1,7 @@
 name: root
-channels:
-  - oce
-  - dlr-sc
-  - conda-forge
-  - defaults
 dependencies:
-  - pythonocc-core=0.17.3=py35h126972a_9
+  - conda:
+    - conda-forge::pythonocc-core
   - pip
   - pip:
     - flask
