@@ -1,5 +1,8 @@
 name: root
 dependencies:
   - python=3.5
-  - -r requirements.txt
+  - anaconda
+  - pip
+  - pip:
+    - -r file:requirements.txt
         
