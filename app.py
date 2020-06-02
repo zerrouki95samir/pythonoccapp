@@ -11,12 +11,12 @@ if not os.path.exists(UPLOAD_DIRECTORY):
 app = Flask(__name__)
 
 
-@api.route('/')
+@app.route('/')
 def home():
     return "Hello, in python-occ-libs"
 
 
-@api.route("/files")
+@app.route("/files")
 def list_files():
     """Endpoint to list files on the server."""
     files = []
@@ -27,13 +27,13 @@ def list_files():
     return jsonify(files)
 
 
-@api.route("/files/<path:path>")
+@app.route("/files/<path:path>")
 def get_file(path):
     """Download a file."""
     return send_from_directory(UPLOAD_DIRECTORY, path, as_attachment=True)
 
 
-@api.route("/files/<filename>", methods=["POST"])
+@app.route("/files/<filename>", methods=["POST"])
 def post_file(filename):
     """Upload a file."""
 
