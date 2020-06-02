@@ -1,13 +1,12 @@
 import os
-from flask import Flask
-# , request, abort, jsonify, send_from_directory, make_response
-#from stp2json import stp2json
-'''
+from flask import Flask, request, abort, jsonify, send_from_directory, make_response
+from stp2json import stp2json
+
 UPLOAD_DIRECTORY = "./tmp"
 
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
-'''
+
 
 app = Flask(__name__)
 
@@ -17,7 +16,7 @@ def index():
     return '<h1>Hello, in python-occ-libs</h1>'
 
 
-'''
+
 @app.route("/files")
 def list_files():
     """Endpoint to list files on the server."""
@@ -51,6 +50,6 @@ def post_file(filename):
 
     return response
 
-'''
+
 if __name__ == "__main__":
     app.run(debug=True)
