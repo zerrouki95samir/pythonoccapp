@@ -1,7 +1,7 @@
 name: root
 dependencies:
   - python=3.5
-  - pythonocc-core
+  - conda-forge::pythonocc-core=0.17.3
   - pip
   - pip:
   - -r file:requirements.txt
