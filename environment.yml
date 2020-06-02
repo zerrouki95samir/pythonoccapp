@@ -3,6 +3,5 @@ dependencies:
   - python=3.5
   - pip
   - pip:
-  - conda-forge::pythonocc-core
-  - -r file:requirements.txt
+    - -r file:requirements.txt
         
