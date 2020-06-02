@@ -1,0 +1,10 @@
+name: root
+dependencies:
+  - conda:
+    - conda-forge::pythonocc-core
+  - pip
+  - pip:
+    - flask
+    - requests
+    - gunicorn
+        
