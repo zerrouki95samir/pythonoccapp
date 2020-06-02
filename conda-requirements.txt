@@ -1,6 +1,6 @@
-conda=3.10.1=py34_0
-conda-env=2.1.4=py34_0
-requests=2.6.0=py34_0
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
 ca-certificates=2020.4.5.1=hecc5488_0
 certifi=2018.8.24=py35_1
 click=7.1.2=pypi_0
@@ -10,6 +10,7 @@ flask-uploads=0.2.1=pypi_0
 freeimage=3.17.0=vc14_3
 freetype=2.10.2=hd328e21_0
 gl2ps=1.4.2=h2c487a6_0
+gunicorn=20.0.4=pypi_0
 icu=64.2=he025d50_1
 itsdangerous=1.1.0=pypi_0
 jinja2=2.11.2=pypi_0
