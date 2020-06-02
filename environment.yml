@@ -1,6 +1,7 @@
 name: root
 dependencies:
-  - pythonocc-core
+  - conda:
+    - ::conda-forge::dlr-sc::pythonocc::oce pythonocc-core
   - pip
   - pip:
     - flask
