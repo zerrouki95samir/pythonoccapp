@@ -1,6 +1,6 @@
 import os
 from flask import Flask, request, abort, jsonify, send_from_directory, make_response
-from stp2json import stp2json
+#from stp2json import stp2json
 
 UPLOAD_DIRECTORY = "./tmp"
 
