@@ -1,6 +1,7 @@
 name: root
 dependencies:
   - python=3.5
+  - pip
   - pip:
     - flask
     - requests
