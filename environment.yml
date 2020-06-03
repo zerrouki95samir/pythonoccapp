@@ -1,10 +1,8 @@
 name: root
 dependencies:
-  conda:
-    - dlr-sc::pythonocc-core
+  - dlr-sc::pythonocc-core
   - pip
   - pip:
     - flask
-    - requests
     - gunicorn
         
