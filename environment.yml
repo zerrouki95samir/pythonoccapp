@@ -1,8 +1,5 @@
 name: root
-channels:
-  - conda-forge
 dependencies:
-  - pythonocc-core
   - pip
   - pip:
     - flask
